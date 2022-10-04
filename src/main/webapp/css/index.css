@@ -1,0 +1,278 @@
+/*************************
+    ESTILOS GENERALES 
+*************************/
+*{
+    text-decoration: none !important;
+    list-style: none !important;
+    border-radius: 0px !important;
+}
+
+body{
+    font-size: 18px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAV */
+nav{
+    background: #333F4F;
+}
+
+/* Logotipo / Nombre */
+nav .navbar-brand{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+/* Links de navegación */
+nav .navbar-nav .nav-link{
+    color: #D7D7D7 !important;
+}
+
+/* Enlace activo */
+nav .nav-item .active{
+    font-weight: bold;
+    color: #FFF !important;
+}
+
+/* Título h3 */
+h3.title{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* hr */
+hr{
+    background-color: #C6C6C6;
+}
+
+/** bg-success - btn-succes */
+.bg-success,
+.btn-success{
+    background: #24572B !important;
+}
+
+    .btn-success:hover{
+        background-color: #2A8036 !important;
+        border-color: #2A8036 !important;
+    }
+
+/* Input */
+input{
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9rem !important;
+    border-radius: 0px !important;
+}
+
+label{
+    margin-bottom: -10px !important;
+}
+
+/* Footer */
+footer{
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #FFF !important;
+    background: #333F4F;
+}
+
+/*************************
+    PÁGINA DEL INDEX - PÁGINA PRINCIPAL
+*************************/
+/** Botón para ir a la página de iniciar sesión */
+.btn-init{
+    background-color: #2A3745;
+    border-color: #405468;
+    color: #FFF;
+    font-weight: normal;
+}
+
+/** Al pasar sobre el botón para ir a la página de iniciar sesión */
+.btn-init:hover{
+    background-color: #405468;
+    border-color: #405468;
+    color: #FFF;
+}
+
+/** EQUIPO **/
+.equipo-contenedor {
+    -webkit-transition: all 0.8s ease-in-out 0s;
+    -moz-transition: all 0.8s ease-in-out 0s;
+    transition: all 0.8s ease-in-out 0s;
+    border: 10px solid #24572B;
+    border-right-color: #333F4F;
+    border-bottom-color: #333F4F;
+    position: relative;
+    width: 95%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+    .equipo-contenedor:hover{
+        -webkit-transition: all 0.8s ease-in-out 0s;
+        -moz-transition: all 0.8s ease-in-out 0s;
+        transition: all 0.8s ease-in-out 0s;
+        border: 10px solid #333F4F;
+        border-right-color: #24572B;
+        border-bottom-color: #24572B;
+    }
+
+.equipo-contenedor .equipo-overlay {
+    background-color: #333F4F;
+    /*background: rgba(161,194,106,0.7);*/
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.equipo-contenedor:hover .equipo-overlay {
+    opacity: 1;
+}
+
+.equipo-imagen {
+    width: 100%;
+    height: 300px;
+}
+
+.equipo-detalles {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.equipo-contenedor:hover .equipo-detalles {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+h3.equipo-titulo{
+    font-weight: 700;
+    color: #FFF;
+    font-size: 1rem;
+    letter-spacing: 0.6px;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.equipo-texto{
+    padding-bottom: 0;
+}
+
+p.equipo-texto{
+    font-weight: 300;
+    color: #FFF;
+    font-size: 0.8em;
+    padding-top: 10px;
+}
+
+.equipo-texto span{
+    display: block;
+    font-weight: 300;
+    color: #FFF;
+    padding-top: 10px;
+}
+
+.fadeIn-bottom {
+    top: 80%;
+}
+
+/*************************
+    PÁGINA DEL LOGIN - INICIAR SESIÓN
+*************************/
+/** Imagen de fondo - Iniciar sesión **/
+.bg-login-image{
+    background: url("../img/bg-login.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
+}
+
+/** Botón iniciar sesión */
+#btn_entrar.btn-outline-success{
+    border-color: #378149 !important;
+    color: #378149;
+    font-weight: normal;
+}
+
+    /** Al pasar sobre el botón de iniciar sesión */
+    #btn_entrar.btn-outline-success:hover{
+        color: #FFF;
+        background-color: #378149;
+    }
+
+.card-title{
+    text-align: center;
+}
+
+.card-text{
+    text-align: center;
+    font-size: 15.5px;
+}
+
+/*************************
+    PÁGINA DEL REGISTRO DE USUARIOS 
+*************************/
+/** Botón registrarse */
+#btn_registrar.btn-success{
+    background: #24572B !important;
+}
+
+    /** Al pasar sobre el botón de registrarse **/
+    #btn_registrar.btn-success:hover{
+        background-color: #2A8036 !important;
+        border-color: #2A8036 !important;
+    }
+
+/*************************
+    PÁGINA DEL HOME 
+*************************/
+#main-menu{
+    left: unset;
+    right: 0;
+}
+
+#ordenar-servicio{
+    cursor: pointer;
+}
+
+/*************************
+    PÁGINA DEL PROFILE - PERFIL DEL USUARIO 
+*************************/
+#form-container{
+    width: 40vw;
+}

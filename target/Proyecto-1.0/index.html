@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Estilos CSS Bootstrap versión 5.0 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">        
+        <!-- FontAwesome - Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />        
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <!-- Estilos CSS -->
+        <link href="./css/index.css" rel="stylesheet">
+        <title>Contrata2 - Inicio</title>
+        <!-- Favicon navegador -->
+        <link rel="icon" type="image/x-icon" href="img/logos/favicon.png">
+    </head>
+    <body>
+
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="./index.html">
+                   <img src="img/logos/logo.png" alt="Logotipo" title="Logotipo" width="180" height="35" class="d-inline-block img-fluid">
+                </a>
+
+                <!-- Se muestra únicamente cuando el menú se colapsa y se oculta cuando el menú aparece expandido -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-proyecto" aria-controls="navbar-proyecto" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links de navegación -->
+                <div class="collapse navbar-collapse justify-content-around" id="navbar-proyecto">
+                    <ul class="navbar-nav ms-auto">
+
+                        <!-- Inicio -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">Inicio</a>
+                        </li>
+
+                        <!-- Iniciar sesión -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html">Iniciar Sesión</a>
+                        </li>
+
+                        <!-- Regístrate -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./register.html">Regístrate</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>    
+
+        <!-- CONTENEDOR PRINCIPAL -->
+        <section id="hero" class="container py-5">
+
+            <div class="row py-5">
+
+                <div class="col-lg-6 align-self-center py-2">
+                    <small class="text-gray text-uppercase mb-2">Adquiere el ofertante disponible</small>
+                    <h1 class="fw-bold">Portal de servicios - Contrata2</h1>
+                    <p class="mb-4">Encuentra el ofertante que necesitas, <span class="fw-bold">¡es muy fácil!</span></p>
+                    <a href="register.html" class="btn btn-success">
+                        Crea una cuenta <i class="fa fa-user-plus"></i>
+                    </a>                        
+                </div>
+
+                <div class="col-lg-6 align-self-center py-2 mx-auto">
+                    <img src="img/bg-index.png" class="img-fluid">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CATEGORÍAS -->
+        <div class="container pt-3 pb-5">
+
+            <!-- -->
+            <div class="my-2">
+                <h3 class="title">Algunas de nuestras categorías</h3>
+            </div>
+
+            <div class="row">
+
+                <!-- Categoría 01 -->
+                <article class="col-12 col-md-6 col-lg-4 my-4 mb-lg-0">
+                    <div class="card h-100">
+                        <img src="img/categorias/01-img.png" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title">Asesores contables</h6>
+                            <p class="card-text">Personal capacitado para brindarte la asesoría necesaria de tus negocios.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Categoría 02 -->
+                <article class="col-12 col-md-6 col-lg-4 my-4 mb-lg-0">
+                    <div class="card h-100">
+                        <img src="img/categorias/02-img.png" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title">Profesores</h6>
+                            <p class="card-text">Estudia y aprende con profesionales de inglés, matemáticas y otras materias.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Categoría 03 -->
+                <article class="col-12 col-md-6 col-lg-4 my-4 mb-lg-0">
+                    <div class="card h-100">
+                        <img src="img/categorias/03-img.png" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title">Mantenimiento</h6>
+                            <p class="card-text">Personal ideal para el mantenimiento correcto de tu equipo de computo.</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+        <hr> 
+
+        <!-- PREGUNTAS FRECUENTES -->
+        <div class="container my-5">
+
+            <!-- -->
+            <div class="my-2">
+                <h3 class="title">Preguntas frecuentes</h3>
+            </div>
+
+            <div class="accordion w-75 mx-auto my-4" id="accordionExample">
+
+                <!-- Accordion 01 -->
+                <div class="accordion-item my-2">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Qué es Contrata2?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Somos una plataforma que viene a facilitar tu forma de contratar a alguien.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion 02 -->
+                <div class="accordion-item my-2">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed border-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Qué servicios ofrecemos?                        
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Visualizar y reservar según los ofertantes de servicios disponibles en tu departamento.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion 03 -->
+                <div class="accordion-item my-2">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed border-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Beneficios de ser usuario premium.
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Obten un <span class="fw-bold">15%</span> en todos los ofertantes.
+                        </div>
+                    </div>
+                </div>
+
+            </div>        
+
+        </div>
+
+        <hr>
+
+        <!-- LINKS A INICIAR SESIÓN -->
+        <div class="container w-75 my-5 text-center">
+            <!-- -->
+            <div class="my-2">
+                <h3 class="title">Reserva-Ya</h3>
+            </div>
+
+            ¿Quieres reservar ya? Ingresa a tu cuenta para realizar tu reserva.
+            <div class="my-4">
+                <a href="./login.html" class="btn btn-init py-2">
+                    Ir a Iniciar sesión <i class="fa fa-share"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Sección equipo -->
+        <section class="container-fluid my-5">
+
+            <div class="my-2">
+                <h3 class="title">Nuestro equipo</h3>            
+            </div>
+            
+            <div class="container w-75 mx-auto">
+                <div class="row">
+
+                    <div class="col-lg-4 mb-4 py-3">
+                        <div class="equipo-contenedor"> 
+                            <div class="equipo-overlay"></div> 
+                            <img class="equipo-imagen" src="img/profile.jpg">
+                            <div class="equipo-detalles fadeIn-bottom">
+                                <h3 class="equipo-titulo">Leidy Uran</h3>
+                                <p class="equipo-texto">
+                                    <i class="fa fa-briefcase"></i> 
+                                    Scrum Master <br> Base de datos
+                                    <span>
+                                        <i class="fa fa-envelope"></i>
+                                        leidyuran77@gmail.com        
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4 py-3">
+                        <div class="equipo-contenedor"> 
+                            <div class="equipo-overlay"></div> 
+                            <img class="equipo-imagen" src="img/profile.jpg">
+                            <div class="equipo-detalles fadeIn-bottom">
+                                <h3 class="equipo-titulo">Natalia Barco</h3>
+                                <p class="equipo-texto">
+                                    <i class="fa fa-briefcase"></i> 
+                                    Tester <br> 
+                                    Dev. Front-end
+                                    <span>
+                                        <i class="fa fa-envelope"></i>
+                                        anbarco@unicauca.edu.co     
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4 py-3">
+                        <div class="equipo-contenedor"> 
+                            <div class="equipo-overlay"></div> 
+                            <img class="equipo-imagen" src="img/profile.jpg">
+                            <div class="equipo-detalles fadeIn-bottom">
+                                <h3 class="equipo-titulo">Manuel G Alvarez</h3>
+                                <p class="equipo-texto">
+                                    <i class="fa fa-briefcase"></i> 
+                                    Dev. Back-end <br> 
+                                    Dev. Front-end
+                                    <span>
+                                        <i class="fa fa-envelope"></i>
+                                        manuelg_11@outlook.com                        
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>        
+
+        </section>    
+        <!--/ -->
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <span>&copy; Contrata2 - 
+                    <script type="text/javascript">
+                        var fechaActual = new Date();
+                        var anhoActual = fechaActual.getFullYear();
+                        document.write(anhoActual);
+                    </script> 
+                </span>    
+            </div>
+        </footer>
+
+        <!-- ARCHIVOS JS - BOOTSTRAP -->
+        <!-- jQuery.js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bundle.js -->
+        <!-- 
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        -->
+        <!-- Popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <!-- Bootstrap.js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <!-- -->
+        <script src="./js/index.js"></script>
+
+    </body>
+</html>
